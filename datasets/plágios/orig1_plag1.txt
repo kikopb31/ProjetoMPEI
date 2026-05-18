@@ -1,0 +1,3 @@
+Nos últimos anos, a área da inteligência artificial tem crescido de forma acelerada.
+Modelos avançados de linguagem conseguem automatizar tarefas difíceis e aumentar a eficiência.
+Apesar disso, permanecem questões importantes sobre ética, privacidade e clareza dos sistemas.
