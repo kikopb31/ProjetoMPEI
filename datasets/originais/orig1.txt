@@ -1,3 +1,16 @@
-A inteligência artificial tem evoluído rapidamente nos últimos anos.
-Os avanços em modelos de linguagem permitem automatizar tarefas complexas e melhorar a produtividade.
-No entanto, continuam a existir desafios relacionados com ética, privacidade e transparência.
+A inteligência artificial tem evoluído de forma acelerada ao longo da última década, impulsionada pelo aumento da capacidade computacional e pela disponibilidade massiva de dados.
+Modelos de linguagem de grande escala tornaram‑se capazes de compreender e gerar texto com um nível de fluidez que antes parecia inatingível.
+Esta evolução permitiu automatizar tarefas complexas, como análise de documentos, sumarização de informação, apoio à escrita e até tomada de decisão assistida.
+
+Apesar dos avanços, continuam a existir desafios significativos.
+Questões relacionadas com ética, privacidade e transparência permanecem no centro do debate académico e industrial.
+Muitos sistemas funcionam como “caixas negras”, dificultando a explicação das decisões que produzem.
+Além disso, o uso de dados sensíveis levanta preocupações sobre segurança e responsabilidade.
+
+Outro ponto crítico é o impacto social da automação.
+Embora a IA aumente a produtividade e reduza custos, também pode substituir funções humanas, exigindo requalificação profissional e adaptação das organizações.
+A integração equilibrada entre humanos e máquinas tornou‑se um dos temas mais discutidos na atualidade.
+
+No futuro, espera‑se que a inteligência artificial continue a expandir‑se para áreas como saúde, educação, justiça e administração pública.
+No entanto, para que esta expansão seja sustentável, será necessário desenvolver mecanismos de regulação, auditoria e supervisão que garantam o uso responsável da tecnologia.
+A combinação entre inovação e responsabilidade será determinante para o sucesso da IA nas próximas décadas.

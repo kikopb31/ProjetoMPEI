@@ -1,3 +1,15 @@
-A energia solar tornou‑se uma das principais fontes renováveis em todo o mundo.
-A redução de custos e o aumento da eficiência dos painéis contribuíram para a sua adoção massiva.
-Muitos países investem agora em infraestruturas de larga escala.
+A energia solar consolidou‑se como uma das fontes renováveis mais relevantes da atualidade, impulsionada pela necessidade global de reduzir emissões e diversificar matrizes energéticas.
+Nas últimas décadas, os avanços tecnológicos permitiram aumentar de forma significativa a eficiência dos painéis fotovoltaicos, tornando a produção de eletricidade a partir da luz do sol mais acessível e competitiva.
+A queda contínua dos custos de fabrico, aliada à melhoria dos sistemas de armazenamento e inversão, contribuiu para que esta tecnologia deixasse de ser uma alternativa experimental e passasse a ocupar um papel central nas estratégias energéticas de muitos países.
+
+A adoção em larga escala tem sido particularmente visível em regiões com elevada exposição solar, onde grandes parques fotovoltaicos foram construídos para abastecer cidades inteiras.
+Governos e empresas têm investido em infraestruturas capazes de integrar a energia solar nas redes elétricas nacionais, reduzindo a dependência de combustíveis fósseis e aumentando a resiliência energética.
+Além disso, a instalação de painéis em edifícios residenciais e comerciais tornou‑se comum, permitindo que consumidores produzam a sua própria eletricidade e reduzam custos a longo prazo.
+
+Apesar dos progressos, a energia solar enfrenta desafios importantes.
+A intermitência da produção, dependente das condições meteorológicas e do ciclo diário, exige soluções de armazenamento eficientes e sistemas de gestão inteligente da rede.
+Outro ponto crítico é a necessidade de reciclar painéis antigos, garantindo que o crescimento da indústria não resulte em impactos ambientais indesejados.
+
+Ainda assim, as perspetivas para o futuro são amplamente positivas.
+Espera‑se que novas gerações de células solares, mais leves, flexíveis e eficientes, ampliem as possibilidades de aplicação, desde veículos elétricos até dispositivos portáteis.
+A combinação entre inovação tecnológica, políticas públicas adequadas e investimento contínuo poderá transformar a energia solar numa das principais bases da economia sustentável das próximas décadas.

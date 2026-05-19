@@ -1,8 +1,8 @@
-clear; clc;
+clear all; clc;
 
 % Parâmetros
-k = 2;              
-numHashes = 500;   
+k = 2;
+numHashes = 500;
 
 current = fileparts(mfilename('fullpath'));
 base = fullfile(current, '..', 'datasets');
@@ -23,18 +23,18 @@ shingles = cell(1, numDocs);
 for i = 1:numDocs
     path = fullfile(todos(i).folder, todos(i).name);
     txt = fileread(path);
-    txt = process_text(txt);              
+    txt = process_text(txt);
     docs{i} = txt;
     shingles{i} = generate_shingles(txt, k);
 end
 
-% Criar funções hash
-H = hash_family(numHashes, 1e6);
+% Criar funções hash (uma vez)
+H = hash_family(numHashes);
 
-% Gerar assinaturas MinHash
+% Gerar assinaturas MinHash (double)
 signatures = zeros(numHashes, numDocs);
 for i = 1:numDocs
-    signatures(:, i) = minhash_signature(shingles{i}, H);
+    signatures(:, i) = minhash_signature(shingles{i}, H).';
 end
 
 % Calcular matriz de similaridade
@@ -54,15 +54,17 @@ disp(simMatrix);
 % Listar pares mais semelhantes
 fprintf("\n=== TOP 10 PARES MAIS SEMELHANTES ===\n");
 
-pares = [];
+numPares = numDocs * (numDocs - 1) / 2;
+pares = zeros(numPares, 3);
+idx = 1;
 
 for i = 1:numDocs
     for j = i+1:numDocs
-        pares = [pares; i, j, simMatrix(i, j)];
+        pares(idx, :) = [i, j, simMatrix(i, j)];
+        idx = idx + 1;
     end
 end
 
-% Ordenar por similaridade
 pares = sortrows(pares, -3);
 
 for k = 1:min(10, size(pares,1))

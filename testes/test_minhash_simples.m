@@ -19,7 +19,7 @@ sh1 = generate_shingles(text1, k);
 sh2 = generate_shingles(text2, k);
 
 % Criar funções hash
-H = hash_family(numHashes, 1e6);
+H = hash_family(numHashes);
 
 % Gerar assinaturas
 sig1 = minhash_signature(sh1, H);

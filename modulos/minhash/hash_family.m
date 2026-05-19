@@ -1,9 +1,16 @@
-function H = hash_family(numHashes, maxValue)
-    a = randi([1 maxValue], 1, numHashes);
-    b = randi([0 maxValue], 1, numHashes);
-    p = 2147483647; 
+function H = hash_family(numHashes)
+    p = 10000019; 
     H = cell(1, numHashes);
     for i = 1:numHashes
-        H{i} = @(x) mod(a(i) * double(sum(x)) + b(i), p);
+        a = randi([1, p-1]);
+        b = randi([0, p-1]);
+        H{i} = @(x) mod(a * hash_string(x) + b, p);
+    end
+end
+
+function h = hash_string(str)
+    h = 5381; 
+    for j = 1:length(str)
+        h = mod(h * 33 + double(str(j)), 1e9+7); % primo ~1e9
     end
 end

@@ -15,7 +15,7 @@ fprintf("✔ Todas as subpastas adicionadas ao path.\n");
 pastas = {
     fullfile(root, 'datasets')
     fullfile(root, 'datasets', 'originais')
-    fullfile(root, 'datasets', 'plágios')
+    fullfile(root, 'datasets', 'plagios')
     fullfile(root, 'modulos')
     fullfile(root, 'modulos', 'minhash')
     fullfile(root, 'modulos', 'bloom_filter')

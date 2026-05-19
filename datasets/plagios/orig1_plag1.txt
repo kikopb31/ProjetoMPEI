@@ -1,3 +1,15 @@
-Nos últimos anos, a área da inteligência artificial tem crescido de forma acelerada.
-Modelos avançados de linguagem conseguem automatizar tarefas difíceis e aumentar a eficiência.
-Apesar disso, permanecem questões importantes sobre ética, privacidade e clareza dos sistemas.
+Nas últimas décadas, a inteligência artificial tem passado por um crescimento notável, impulsionado tanto pela evolução do hardware como pela enorme quantidade de dados disponíveis para treino.
+Os sistemas modernos, especialmente os modelos de linguagem de grande escala, alcançaram níveis de desempenho que antes eram considerados impossíveis, conseguindo interpretar texto, gerar respostas complexas e apoiar processos de decisão em múltiplos contextos.
+Esta capacidade transformou a forma como empresas e instituições lidam com informação, permitindo automatizar tarefas exigentes e aumentar significativamente a eficiência operacional.
+
+Apesar deste progresso impressionante, persistem questões fundamentais que continuam a preocupar investigadores, reguladores e utilizadores.
+A falta de transparência em muitos modelos dificulta a compreensão das razões por trás das suas previsões, o que levanta dúvidas sobre responsabilidade e confiança.
+Além disso, o uso de grandes volumes de dados sensíveis torna inevitável o debate sobre privacidade, segurança e proteção dos cidadãos.
+
+Outro desafio relevante está relacionado com o impacto social da automação.
+Embora a IA possa libertar profissionais de tarefas repetitivas e melhorar a produtividade, também pode criar desigualdades se não forem implementadas estratégias adequadas de adaptação e formação.
+A necessidade de desenvolver competências humanas complementares, como supervisão tecnológica e pensamento crítico, torna‑se cada vez mais evidente.
+
+Olhando para o futuro, é provável que a inteligência artificial continue a expandir‑se para áreas essenciais como saúde, educação e administração pública.
+No entanto, para que esta expansão seja sustentável e benéfica, será indispensável criar mecanismos de regulação, auditoria e monitorização que assegurem práticas responsáveis.
+O equilíbrio entre inovação e ética será determinante para garantir que a IA contribui positivamente para a sociedade nas próximas décadas.
