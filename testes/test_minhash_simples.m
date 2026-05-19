@@ -1,12 +1,18 @@
 clear; clc;
 
 % Parâmetros
-k = 3;              % tamanho dos shingles
-numHashes = 100;    % número de funções hash
+k = 2;              
+numHashes = 500;   
 
 % Ler documentos
-text1 = fileread('../datasets/originais/orig1.txt');
-text2 = fileread('../datasets/plagiados/orig1_plag1.txt');
+current = fileparts(mfilename('fullpath'));
+base = fullfile(current, '..', 'datasets');
+text1 = fileread(fullfile(base, 'originais', 'orig1.txt'));
+text2 = fileread(fullfile(base, 'plágios', 'orig1_plag1.txt'));
+
+% Processar texto
+text1 = process_text(text1);
+text2 = process_text(text2);
 
 % Gerar shingles
 sh1 = generate_shingles(text1, k);
