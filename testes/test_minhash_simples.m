@@ -8,7 +8,7 @@ numHashes = 500;
 current = fileparts(mfilename('fullpath'));
 base = fullfile(current, '..', 'datasets');
 text1 = fileread(fullfile(base, 'originais', 'orig1.txt'));
-text2 = fileread(fullfile(base, 'plágios', 'orig1_plag1.txt'));
+text2 = fileread(fullfile(base, 'plagios', 'orig1_plag1.txt'));
 
 % Processar texto
 text1 = process_text(text1);
