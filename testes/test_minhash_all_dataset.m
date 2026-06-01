@@ -1,3 +1,4 @@
+% Ficheiro: testes/teste_minash_all_dataset.m
 clear all; clc;
 
 k_shingle = 2; 
@@ -13,7 +14,6 @@ todos = [originais; plagios];
 numDocs = length(todos);
 
 fprintf("Foram encontrados %d documentos para o teste.\n\n", numDocs);
-
 
 docs = cell(1, numDocs);
 shingles = cell(1, numDocs);
@@ -51,6 +51,9 @@ fprintf("\n=== INÍCIO DA AVALIAÇÃO MINHASH ===\n");
 for numHashes = numHashes_testes
     fprintf("\n[Teste] %d funções de dispersão:\n", numHashes);
 
+    % CORREÇÃO: Adicionado tic para iniciar o cronómetro
+    tic; 
+    
     H = hash_family(numHashes);
 
     signatures = zeros(numHashes, numDocs);
@@ -84,7 +87,7 @@ for numHashes = numHashes_testes
     erroMedio = erroTotal / contagemPares;
 
     fprintf(" -> Tempo de processamento: %.4f segundos\n", tempo_execucao);
-    fprintf(" -> Erro Médio (vs Jaccard Real): %.4f\n", erroMedio);
+    fprintf(" -> Erro Medio (vs Jaccard Real): %.4f\n", erroMedio);
 
     if numHashes == numHashes_testes(end)
         fprintf("\n=== TOP 10 PARES MAIS SEMELHANTES ===\n");

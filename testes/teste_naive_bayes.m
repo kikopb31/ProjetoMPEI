@@ -1,30 +1,19 @@
-addpath('../modulos/naive_bayes');
-addpath('../modulos/minhash'); 
+fprintf('================================================\n');
+fprintf('       TESTE: NAIVE BAYES CLASSIFIER            \n');
+fprintf('================================================\n\n');
 
-textos_originais_brutos = {
-    'O estudo da biodiversidade é fundamental para compreender os ecossistemas',
-    'a energia solar expandiu se devido a queda continua dos custos de fabrico',
-    'a culinaria italiana e reconhecida mundialmente pela sua simplicidade'
-};
-
-textos_plagio_brutos = {
-    'nas ultimas decadas a inteligencia artificial tem passado por crescimento notavel',
-    'o desenvolvimento da inteligencia artificial tornou-se uma das maiores evoluções tecnológicas',
-    'a energia solar tem vindo a destacar-se como uma das alternativas de energia renovável'
-};
-
-textos_originais = cellfun(@process_text, textos_originais_brutos, 'UniformOutput', false);
-textos_plagio = cellfun(@process_text, textos_plagio_brutos, 'UniformOutput', false);
+treino_orig = {'a inteligencia artificial evolui muito rapido', 'o futebol move milhoes de adeptos'};
+treino_plag = {'copia inteligencia artificial evolui muito rapido', 'futebol move imensos milhoes'};
 
 nb = naive_bayes_classifier();
-nb = nb.train(textos_originais, textos_plagio);
-fprintf('-> Modelo Naïve Bayes treinado com %d instâncias.\n\n', length(textos_originais) + length(textos_plagio));
+nb = nb.train(treino_orig, treino_plag);
+fprintf('-> Modelo treinado com sucesso.\n\n');
 
+teste_normal = process_text('o futebol e um desporto maravilhoso');
+teste_suspeito = process_text('copia fiavel sobre inteligencia artificial');
 
-teste_ok = process_text('a culinaria italiana foca em ingredientes frescos e simplicidade');
-teste_suspeito = process_text('desenvolvimento e crescimento notavel de fenomenos tecnologicos');
-res_ok = nb.classify(nb, teste_ok);
+res_normal = nb.classify(nb, teste_normal);
 res_suspeito = nb.classify(nb, teste_suspeito);
 
-fprintf('Texto1 (Estilo Original) -> Classificação de Plágio? (Esperado: 0) -> Obtido: %d\n', res_ok);
-fprintf('Texto2 (Estilo Plágio) -> Classificação de Plágio? (Esperado: 1) -> Obtido: %d\n', res_suspeito);
+fprintf('Texto Normal (Esperado: 0) -> Obtido: %d\n', res_normal);
+fprintf('Texto Suspeito (Esperado: 1) -> Obtido: %d\n', res_suspeito);
