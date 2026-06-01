@@ -1,7 +1,8 @@
 function signature = minhash_signature(shingles, H)
     numHashes = length(H);
     signature = inf(1, numHashes);  
-    for i = 1:length(shingles)
+    numShingles = numel(shingles);
+    for i = 1:numShingles
         s = char(shingles(i));
         for h = 1:numHashes
             hashValue = H{h}(s);   

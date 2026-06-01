@@ -32,13 +32,15 @@ for i = 1:length(pastas)
     end
 end
 
-%% 4. Validar funções essenciais
+%% 4. Validar funções 
 funcoes = {
     'generate_shingles'
     'hash_family'
     'minhash_signature'
     'jaccard_estimate'
     'process_text'
+    'bloom_filter'
+    'naive_bayes_classifier'
 };
 
 fprintf("\n=== Verificação de funções ===\n");

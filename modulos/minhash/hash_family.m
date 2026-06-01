@@ -4,7 +4,7 @@ function H = hash_family(numHashes)
     for i = 1:numHashes
         a = randi([1, p-1]);
         b = randi([0, p-1]);
-        H{i} = @(x) mod(a * hash_string(x) + b, p);
+        H{i} = @(x) feval(@(val) val, mod(a * hash_string(x) + b, p));
     end
 end
 

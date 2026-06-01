@@ -1,4 +1,4 @@
-% Ficheiro: testes/teste_minash_all_dataset.m
+% Ficheiro: testes/teste_minash.m
 clear all; clc;
 
 k_shingle = 2; 
