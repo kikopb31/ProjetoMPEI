@@ -2,10 +2,10 @@
 Este projeto implementa um sistema de deteção de plágio usando três algoritmos probabilísticos: Bloom Filter, Naïve Bayes e MinHash. O nosso objetivo principal foi aplicar de forma prática os conhecimentos de estruturas de dados probabilísticas, classificadores bayesianos e estimadores de similaridade num cenário real de auditoria de texto.
 
 ## Membros do Grupo
-| Nome | Nº Mec | Responsabilidades |
-|------|--------|-------------------|
-| Cristiane Moreno | 128076 | Bloom Filter, Naïve Bayes, Documentação |
-| Francisco | [completar] | MinHash, Testes, Integração, Documentação |
+| Nome | Nº Mec |
+|------|--------|
+| Cristiane Moreno |
+| Francisco |124677 | 
 
 
 ## O que o sistema faz
@@ -37,7 +37,7 @@ O MinHash estima a similaridade entre documentos de forma rápida:
 - Reduz cada conjunto a uma assinatura numérica.
 - A similaridade é a taxa de colisão entre assinaturas.
 
-**Parâmetros utilizados:** shingles k=2, 200 funções de hash.
+**Parâmetros utilizados:** shingles k=2, 200 funções de hash (testado com 50, 100, 200 e 500 funções de hash).
 
 
 ## Pré-processamento de Dados
@@ -50,7 +50,12 @@ Antes da análise, o texto é normalizado:
 ## Como Executar
 1. Abra o **MATLAB**.
 2. Execute o script `setup.m` na raiz do projeto para adicionar as pastas ao path.
-3. Navegue até à pasta `demo` no terminal ou no painel lateral.
-4. Execute o programa de demonstração principal digitando o comando:
+3. Execute o programa de demonstração principal digitando o comando:
    ```matlab
    main_demo
+4. tester isolados:
+   teste_bloom_filter 
+   teste_naive_bayes       
+   test_minhash_simples   
+   test_minhash_all_dataset 
+   grafico
